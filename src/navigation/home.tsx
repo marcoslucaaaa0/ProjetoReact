@@ -13,9 +13,9 @@ export const NavegacaoHome = () => (
     <Tab.Navigator 
         initialRouteName='home'
         tabBarOptions={{
-            activeBackgroundColor: 'rgba(81, 120, 103, 0.2)',
-            inactiveBackgroundColor: '#517867',
-            activeTintColor: '#387c6d',
+            activeBackgroundColor: '#fff',
+            inactiveBackgroundColor: '#06AA48',
+            activeTintColor: '#06AA48',
             inactiveTintColor: '#fff',
             labelStyle: {
                 fontSize: 11,
@@ -32,7 +32,7 @@ export const NavegacaoHome = () => (
             component={CategoriasScreeen} 
             options={{
                 tabBarLabel: 'Categorias',
-                tabBarIcon: (props) => <FontAwesome name='th-list' size={20} color={props.focused ? '#387c6d' : '#fff'} />
+                tabBarIcon: (props) => <FontAwesome name='th-list' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
         <Tab.Screen 
@@ -40,15 +40,15 @@ export const NavegacaoHome = () => (
             component={PesquisaScreen} 
             options={{
                 tabBarLabel: 'Pesquisar',
-                tabBarIcon: (props) => <FontAwesome5 name='search' size={20} color={props.focused ? '#387c6d' : '#fff'} />
+                tabBarIcon: (props) => <FontAwesome5 name='search' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
         <Tab.Screen 
             name='home' 
             component={HomeScreen}  
             options={{
-                tabBarLabel: 'Inicio',
-                tabBarIcon: (props) => <Entypo name='home' size={20} color={props.focused ? '#387c6d' : '#fff'} />
+                tabBarLabel: 'Jogos',
+                tabBarIcon: (props) => <FontAwesome5 name='futbol' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
         <Tab.Screen 
@@ -56,7 +56,7 @@ export const NavegacaoHome = () => (
             component={CarrinhoScreen} 
             options={{
                 tabBarLabel: 'Carrinho',
-                tabBarIcon: (props) => <Entypo name='shopping-cart' size={20} color={props.focused ? '#387c6d' : '#fff'} />
+                tabBarIcon: (props) => <Entypo name='shopping-cart' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
         <Tab.Screen 
@@ -64,7 +64,7 @@ export const NavegacaoHome = () => (
             component={UsuarioScreen} 
             options={{
                 tabBarLabel: 'Perfil',
-                tabBarIcon: (props) => <FontAwesome name='user' size={22} color={props.focused ? '#387c6d' : '#fff'} />
+                tabBarIcon: (props) => <FontAwesome name='user' size={22} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
     </Tab.Navigator>

@@ -11,7 +11,7 @@ const Stack = createStackNavigator()
 
 export const NavegacaoPrincipal = () => (
     <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName='login'>
+        <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName='app'>
             <Stack.Screen name='cadastro' component={CadastroScreen} />
             <Stack.Screen name='login' component={LoginScreen} />
             <Stack.Screen name='categoria' component={CategoriaScreen} />

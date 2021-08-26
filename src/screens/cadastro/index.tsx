@@ -32,7 +32,7 @@ export function CadastroScreen(props: CadastroScreenProps) {
             <StatusBar />
 
             <View style={estilo.conteiner}>
-                <Image source={require('./../../assets/imagens/logo.png')} style={estilo.logo} />
+                <Image source={require('./../../assets/imagens/futebolHoje_Logo.png')} style={estilo.logo} />
 
                 <Formik
                     initialValues={{ nome: '', email: '', senha: '' }}

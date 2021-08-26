@@ -1,40 +1,15 @@
 import * as React from 'react';
 import { View, Text, StatusBar, StyleSheet, Image, ImageBackground } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { Cartao } from '../../componentes/cartao';
-import { Secao } from '../../componentes/secao';
+import { Card, ListItem, Button, Icon } from 'react-native-elements';
+import { FontAwesome, FontAwesome5, Entypo } from '@expo/vector-icons'
 
 export interface HomeScreenProps {
 }
 
 export function HomeScreen(props: HomeScreenProps) {
-  const cartoes = [
-    {
-      imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-      titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-      preco: 299.88,
-      id: '1'
-    },
-    {
-      imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-      titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-      preco: 299.88,
-      id: '2'
-    },
-    {
-      imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-      titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-      preco: 299.88,
-      id: '3'
-    },
-    {
-      imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-      titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-      preco: 299.88,
-      id: '4'
-    },
-  ]
-  
+
+
   return (
     <View style={estilo.fundo}>
       <StatusBar />
@@ -43,14 +18,125 @@ export function HomeScreen(props: HomeScreenProps) {
         <ScrollView>
           <View style={estilo.cabecalho}>
             <ImageBackground
-              source={require('./../../assets/imagens/FUTSEMPRE.png')}
-              style={{ width: '100%', height: '100%' }}
+              source={require('./../../assets/imagens/futebolHoje_Logo.png')}
+              style={estilo.logo}
             />
           </View>
+          <Card >
 
-          <Secao key='1' secao={{titulo: 'Lançamentos', cartoes: cartoes, id: '1'}} />
-          <Secao key='2' secao={{titulo: 'Mais vendidas', cartoes: cartoes, id: '1'}} />
-          
+            <Card.Title style={{ textAlign: 'center' }}>HOJE</Card.Title>
+
+            <Card.Divider />
+            {
+              <View style={{ marginBottom: 45 }}>
+                <Text style={estilo.texthoursCard}>16:00</Text>
+
+                <View style={estilo.viewCard}>
+
+                  <View style={estilo.escudosENomes}>
+
+                    <Text>FLA</Text>
+
+                    <Image source={require('./../../assets/imagens/escudos/FlamengoHD.png')}
+                      style={estilo.iconsClubes}
+                      resizeMode="cover"
+                    />
+
+                  </View>
+
+                  <View style={estilo.iconX} >
+                    <FontAwesome name='times' size={20} color={'#000'} />
+                  </View>
+
+                  <View style={estilo.escudosENomes}>
+
+                    <Image source={require('./../../assets/imagens/escudos/AtleticoMG.png')}
+                      style={estilo.iconsClubes}
+                      resizeMode="cover"
+                    />
+                    <Text>CAM</Text>
+
+                  </View>
+
+                </View>
+
+              </View>
+            }
+
+            <Card.Divider />
+
+            <View style={{ marginBottom: 45 }}>
+              <Text style={estilo.texthoursCard}>16:00</Text>
+
+              <View style={estilo.viewCard}>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Text>INT</Text>
+
+                  <Image source={require('./../../assets/imagens/escudos/Internacional.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+
+                </View>
+
+                <View style={estilo.iconX} >
+                  <FontAwesome name='times' size={20} color={'#000'} />
+                </View>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Image source={require('./../../assets/imagens/escudos/Grêmio.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+                  <Text>GRE</Text>
+
+                </View>
+
+              </View>
+
+            </View>
+
+
+            <Card.Divider />
+
+            <View style={{ marginBottom: 45 }}>
+              <Text style={estilo.texthoursCard}>16:00</Text>
+
+              <View style={estilo.viewCard}>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Text>CEA</Text>
+
+                  <Image source={require('./../../assets/imagens/escudos/CearaHD.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+
+                </View>
+
+                <View style={estilo.iconX} >
+                  <FontAwesome name='times' size={20} color={'#000'} />
+                </View>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Image source={require('./../../assets/imagens/escudos/FortalezaHD.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+                  <Text>FOR</Text>
+
+                </View>
+
+              </View>
+
+            </View>
+
+          </Card>
         </ScrollView>
       </View>
     </View>
@@ -59,18 +145,66 @@ export function HomeScreen(props: HomeScreenProps) {
 
 const estilo = StyleSheet.create({
   fundo: {
-    backgroundColor: '#9fb8ad',
+    backgroundColor: '#ffff',
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
   },
   cabecalho: {
-    width: '100%',
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     height: 65,
-    backgroundColor: '#517867',
-    marginBottom: 20
+    backgroundColor: '#06AA48',
+    marginBottom: 20,
+
   },
+
+  viewCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 10,
+    justifyContent: 'space-between'
+  },
+
+  escudosENomes: {
+    flexDirection: 'row',
+    alignItems: 'center',
+
+  },
+
+
+  texthoursCard: {
+    textAlign: 'center',
+
+  },
+
   conteiner: {
     width: '100%'
-  }
+  },
+
+  logo: {
+    width: '70%',
+    height: '100%',
+    marginLeft: 70,
+    marginTop: 30
+
+
+
+  },
+
+  iconsClubes: {
+    width: 24,
+    height: 24,
+
+
+  },
+
+
+  iconX: {
+    marginLeft: 7
+
+  },
+
 });

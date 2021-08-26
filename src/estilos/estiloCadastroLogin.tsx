@@ -8,8 +8,11 @@ export const estilo = StyleSheet.create({
         height: '100%'
     },
     logo: {
-        height: 50,
-        width: 230
+        height: 120,
+        width: 350,
+        marginRight:20,
+        marginTop:50
+        
     },
     conteiner: {
         flex: 1,
@@ -18,7 +21,7 @@ export const estilo = StyleSheet.create({
         alignItems: 'center'
     },
     formulario: {
-        marginTop: 30
+        marginTop: 0
     },
     botao: {
         borderRadius: 20,
@@ -27,7 +30,7 @@ export const estilo = StyleSheet.create({
         marginTop: 10
     },
     linkNavegacao: {
-        color: '#a4ebf3',
+        color: '#ffffff',
         textAlign: 'center',
         marginTop: 4,
         fontSize: 15,

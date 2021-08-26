@@ -38,7 +38,7 @@ export default function LoginScreen(props: LoginScreenProps) {
             <StatusBar />
 
             <View style={estilo.conteiner}>
-                <Image style={estilo.logo} source={require('./../../assets/imagens/logo.png')} />
+                <Image style={estilo.logo} source={require('./../../assets/imagens/futebolHoje_Logo.png')} />
 
                 <Formik initialValues={{ email: '', senha: '' }}
                     validationSchema={Yup.object().shape({
