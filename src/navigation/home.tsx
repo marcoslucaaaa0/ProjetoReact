@@ -35,14 +35,7 @@ export const NavegacaoHome = () => (
                 tabBarIcon: (props) => <FontAwesome name='th-list' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
-        <Tab.Screen 
-            name='pesquisa' 
-            component={PesquisaScreen} 
-            options={{
-                tabBarLabel: 'Pesquisar',
-                tabBarIcon: (props) => <FontAwesome5 name='search' size={20} color={props.focused ? '#06AA48' : '#fff'} />
-            }}
-        />
+       
         <Tab.Screen 
             name='home' 
             component={HomeScreen}  
@@ -51,14 +44,7 @@ export const NavegacaoHome = () => (
                 tabBarIcon: (props) => <FontAwesome5 name='futbol' size={20} color={props.focused ? '#06AA48' : '#fff'} />
             }}
         />
-        <Tab.Screen 
-            name='carrinho' 
-            component={CarrinhoScreen} 
-            options={{
-                tabBarLabel: 'Carrinho',
-                tabBarIcon: (props) => <Entypo name='shopping-cart' size={20} color={props.focused ? '#06AA48' : '#fff'} />
-            }}
-        />
+      
         <Tab.Screen 
             name='usuario' 
             component={UsuarioScreen} 

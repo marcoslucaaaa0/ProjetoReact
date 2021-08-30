@@ -28,20 +28,6 @@ export function CategoriaScreen(props: CategoriaScreenProps) {
             <ScrollView>
                 <View style={estilo.conteinerProdutos}>
 
-                    <Cartao
-                        cartao={{
-                            imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-                            titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-                            preco: 299.88
-                        }}
-                    />
-                    <Cartao
-                        cartao={{
-                            imagem: require('./../../assets/imagens/camisas/times-brasileiros/camisa-sao-paulo1.jpg'),
-                            titulo: 'Camisa São Paulo I 21/22 s/n° Torcedor Adidas Masculina - Branco+Vermelho',
-                            preco: 299.99
-                        }}
-                    />
 
                 </View>
             </ScrollView>
@@ -52,11 +38,11 @@ export function CategoriaScreen(props: CategoriaScreenProps) {
 
 const estilo = StyleSheet.create({
     fundo: {
-        backgroundColor: '#9fb8ad',
+        backgroundColor: '#fff',
         flex: 1
     },
     cabecalho: {
-        backgroundColor: 'rgba(58,99,81,0.6)',
+        backgroundColor: '#06AA48',
         height: 50,
         paddingLeft: 15,
         paddingRight: 15,

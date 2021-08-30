@@ -24,7 +24,7 @@ export function CampoUsuario(props: CampoUsuarioProps) {
 const estilo = StyleSheet.create({
     inputConteinerStyle: {
       borderBottomWidth: 0,
-      backgroundColor: '#467378',
+      backgroundColor: '#06AA48',
       borderRadius: 10,
       height: '100%'
     },

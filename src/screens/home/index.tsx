@@ -22,7 +22,7 @@ export function HomeScreen(props: HomeScreenProps) {
               style={estilo.logo}
             />
           </View>
-          <Card >
+          <Card containerStyle={{marginTop: 50}}  >
 
             <Card.Title style={{ textAlign: 'center' }}>HOJE</Card.Title>
 
@@ -129,6 +129,42 @@ export function HomeScreen(props: HomeScreenProps) {
                     resizeMode="cover"
                   />
                   <Text>FOR</Text>
+
+                </View>
+
+              </View>
+
+            </View>
+
+            <Card.Divider />
+
+            <View style={{ marginBottom: 45 }}>
+              <Text style={estilo.texthoursCard}>16:00</Text>
+
+              <View style={estilo.viewCard}>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Text>JUV</Text>
+
+                  <Image source={require('./../../assets/imagens/escudos/Juventude.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+
+                </View>
+
+                <View style={estilo.iconX} >
+                  <FontAwesome name='times' size={20} color={'#000'} />
+                </View>
+
+                <View style={estilo.escudosENomes}>
+
+                  <Image source={require('./../../assets/imagens/escudos/SportRecife.png')}
+                    style={estilo.iconsClubes}
+                    resizeMode="cover"
+                  />
+                  <Text>SPT</Text>
 
                 </View>
 

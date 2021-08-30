@@ -24,10 +24,10 @@ export function UsuarioScreen(props: UsuarioScreenProps) {
 
   let usuario: ModeloUsuario = {
     id: '1',
-    nome: 'Edvan Oliveira',
+    nome: 'Marcos Luca',
     cpf: '11111111111',
-    email: 'teste@teste.com',
-    telefone: '8299964578',
+    email: 'Luca@teste.com',
+    telefone: '82999845748',
     senha: '12345678',
     foto: foto
   }
@@ -137,7 +137,7 @@ export function UsuarioScreen(props: UsuarioScreenProps) {
 const estilo = StyleSheet.create({
   fundo: {
     flex: 1,
-    backgroundColor: '#9fb8ad'
+    backgroundColor: '#fff'
   },
   conteiner: {
     flex: 1,
@@ -181,7 +181,7 @@ const estilo = StyleSheet.create({
     marginBottom: 30,
     borderRadius: 70,
     borderWidth: 5,
-    borderColor: '#519299'
+    borderColor: '#06AA48'
   },
   campo: {
     display: 'flex',

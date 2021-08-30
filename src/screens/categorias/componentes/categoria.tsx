@@ -23,7 +23,7 @@ export function Categoria(props: CategoriaProps) {
 
 const estilo = StyleSheet.create({
   opcao: {
-    backgroundColor: '#fff',
+    backgroundColor: '#06AA48',
     padding: 15,
     display: 'flex',
     flexDirection: 'row',
@@ -35,7 +35,7 @@ const estilo = StyleSheet.create({
     borderBottomWidth: 1
   },
   textoCategoria: {
-    color: '#3f3f44',
+    color: '#fff',
     fontSize: 18
   }
 });

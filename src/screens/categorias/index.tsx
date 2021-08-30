@@ -13,28 +13,21 @@ export function CategoriasScreeen(props: CategoriasScreeenProps) {
   const categorias: ModeloCategoria[] = [
     {
       id: '1',
-      titulo: 'Camisas retrô'
+      titulo: 'Brasileirão'
     },
     {
       id: '2',
-      titulo: 'Camisas masculinas'
+      titulo: 'Copa do Brasil'
     },
     {
       id: '3',
-      titulo: 'Camisas femininas'
+      titulo: 'Libertadores'
     },
     {
       id: '4',
-      titulo: 'Times brasileiros'
+      titulo: 'Champions League'
     },
-    {
-      id: '5',
-      titulo: 'Seleções'
-    },
-    {
-      id: '6',
-      titulo: 'Times europeus'
-    },
+
   ]
 
   return (
@@ -53,7 +46,7 @@ export function CategoriasScreeen(props: CategoriasScreeenProps) {
 
 const estilo = StyleSheet.create({
   fundo: {
-    backgroundColor: '#9fb8ad',
+    backgroundColor: '#ffff',
     flex: 1
   }
 });
